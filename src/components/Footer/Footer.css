@@ -1,0 +1,39 @@
+.footer-container {
+    background-color: #3A4895;
+    color: white;
+    height: 64px;
+    padding: 0 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.heart-icon {
+    margin: 2px;
+    background: none;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    background: 0;
+}
+
+
+/* Media Query for Phone */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        padding: 8px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

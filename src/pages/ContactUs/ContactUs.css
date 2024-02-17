@@ -1,0 +1,84 @@
+.contactus-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 20% 20% 20%;
+}
+
+label {
+    background-color: white;
+    font-weight: 700;
+    font-size: 32px;
+    
+    margin-bottom: 40px;
+}
+
+input {
+    height: 32px;
+    width: 155%;
+    background-color: #B4B4B4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 20px
+}
+
+input::placeholder {
+    color: white;
+}
+
+textarea {
+    height: 96px;
+    width: 155%;
+    background-color: #B4B4B4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+.contactus-btn {
+    height: 32px;
+    width: 90%;
+    background-color: #5264C3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Query for tablet */
+@media screen and (max-width: 1000px) {
+    form {
+        width: 80%;
+    }
+
+    input {
+        width: 135%;
+    }
+
+    textarea {
+        width: 135%;
+    }
+}
+
+/* Phone Display Setting */
+@media screen and (max-width: 400px) {
+    label {
+        font-size: 24px;
+    }
+}

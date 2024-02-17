@@ -1,0 +1,254 @@
+/* To set a padding with the content */
+.checkout-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+/* Styling for the content */
+.checkout-container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    background-color: white;
+}
+
+/* Styling for the container of the titles */
+.checkout-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    color: #979797;
+    background-color: white;
+    border-bottom: 2px solid #D9D9D999;
+}
+
+.checkout-info p {
+    background-color: white;
+    font-size: 20px;
+}
+
+.items-info {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.items-info >:nth-child(1) {
+    width: 15%;
+}
+
+/* Styling for product added */
+.product {
+    height: 152px;
+    display: flex;
+    background-color: white;
+    padding: 16px;
+    border-bottom: 2px solid #D9D9D999;
+}
+
+.prod-title {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.prod-title :nth-child(2) {
+    height: 50px;
+    width: 60%;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.product img {
+    width: 18%;
+    height: 95%;
+    margin-right: 24px;
+}
+
+.prod-details {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.prod-price {
+    width: 10%;
+}
+
+.delete-icon {
+    font-size: 40px;
+    margin-right: 32px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.product p {
+    background-color: white;
+}
+
+/* Styling for the total container */
+.total-container {
+    background-color: white;
+    height: 250px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.total-price {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-bottom: 48px;
+}
+
+.total-price >:nth-child(1) {
+    background-color: white;
+}
+
+.total-price >:nth-child(2) {
+    background-color: white;
+    margin-left: 16px;
+}
+
+.total-container button {
+    width: 152px;
+    height: 40px;
+    font-size: 14px;
+    background-color: #FFD814;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* In case there's no items  */
+.no-item {
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/* Styling for the modal */
+.modal-container {
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 56px 80px;
+}
+
+.modal-header {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-btn {
+    height: 40px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background-color: #5264C3;
+    cursor: pointer;
+}
+
+
+/* Media Query for tablet */
+@media screen and (max-width: 1000px) {
+    .checkout-page {
+        padding: 24px;
+    }
+
+    .product img {
+        width: 25%;
+    }
+
+    .modal-container {
+        padding: 56px 16px;
+    }
+}
+
+/* Media Query for Phone */
+@media screen and (max-width: 400px) {
+    .checkout-info {
+        display: none;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+    }
+
+    .prod-title {
+        width: 80%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .product img {
+        width: 25%;
+        margin-bottom: 8px;
+    }
+
+    .prod-title p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .prod-details {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .prod-price {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .prod-details :nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+
+    .delete-icon {
+        position: absolute;
+        right: -80px;
+    }
+
+    .modal-container {
+        padding: 56px 0;
+    }
+}

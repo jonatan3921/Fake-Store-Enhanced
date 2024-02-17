@@ -1,0 +1,32 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+.header-container h1 {
+    color: #3A4895;
+    font-weight: 600;
+}
+
+.basket-icon {
+    color: #3A4895;
+    font-size: 40px;
+}
+
+.counter {
+    font-size: 10px;
+    color: white;
+    background-color: red;
+    padding: 4px 8px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 28px;
+    right: 35px;
+}

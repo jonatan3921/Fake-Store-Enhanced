@@ -1,0 +1,18 @@
+.home-container {
+    min-height: 100vh;
+}
+
+.products-container {
+    padding: 24px 88px 64px 88px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Media Query for tablet */
+@media screen and (max-width: 1024px) {
+    .products-container {
+        padding: 24px 24px 64px 24px;
+    }
+}
